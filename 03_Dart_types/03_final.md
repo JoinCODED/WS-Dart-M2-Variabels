@@ -1,0 +1,28 @@
+No that's not the `final` lesson, it's the `final` keyword.
+
+There is sometimes that we want to declare and initialize a variable and never change it's value later, in other words we want a variable to be `final` or `read-only`, hence we can use the `final` keyword.
+
+```dart
+void main() {
+    var name="Mohammad";
+    final age = 60;
+    age = "young";
+    var height = 1.84;
+}
+```
+
+Here, we are telling dart that the value of `age` is final, and can't be reassigned, that's why we have an error in the code above.
+
+Maybe you are not convinced to use final, but once you start working on big projects, you will start to appreciate the `final` keyword as it shows us that this variable is meant to be `read-only` and saves us from catching weird bugs.
+
+So prefer `final` over `var` whenever you could, and that's final!
+
+You can still explicitly tell dart the variable type and set it as `final`:
+
+```dart
+void main() {
+    final String name="Mohammad";
+    final int age = 60;
+    var height = 1.84;
+}
+```
