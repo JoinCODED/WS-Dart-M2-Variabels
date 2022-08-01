@@ -1,8 +1,8 @@
-Their is one more keyword in dart that is more restrictive than `final` which is `const`.
+There is another keyword in Dart that is more restrictive than `final` which is `const`.
 
 `const` defines a `compile-time` constant.
 
-Let's try to use `const` on this block of code:
+Let's try to use `const` in this block of code:
 
 ```dart
 void main() {

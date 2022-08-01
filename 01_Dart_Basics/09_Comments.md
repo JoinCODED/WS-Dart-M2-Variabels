@@ -1,12 +1,12 @@
-There's a useful feature that you haven't learned yet, but you maybe noticed it, its `comments`.
+There's a useful feature that you haven't learned yet, but maybe you've noticed it, it's a `comment`.
 
-Comments are text that can be injected in our code but ignored by the compiler.
+Comments are texts that can be injected into our code but ignored by the compiler.
 
-Comments are useful to add notes 📝 on the code so you can understand it when you leave the code for a while, or for your colleague developer if you are working on a team.
+Comments are useful to add notes 📝 to the code so you can understand it when you get back to the code after a long time, or for your colleague developer if you are working within a team.
 
-### Single line comments:
+### Single-line comments:
 
-To add a single line comment in dart we start the line by `//`:
+To add a single-line comment in Dart, we start the line by `//`:
 
 ```dart
 void main(){
@@ -14,9 +14,9 @@ void main(){
 }
 ```
 
-### Multi line comments:
+### Multi-line comments:
 
-To add a single line comment in dart we start the line by `/*` and we end it with `*/`:
+To add multiple lines of comments in Dart, we start the line by `/*` and we end it with `*/`:
 
 ```dart
 void main(){

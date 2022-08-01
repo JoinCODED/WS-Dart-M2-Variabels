@@ -1,6 +1,6 @@
-In this lesson you will learn about operators in dart.
+In this lesson, you will learn about operators in Dart.
 
-We can perform all types of arithmetic operations with dart, for example:
+We can perform all types of arithmetic operations with Dart, for example:
 
 ```dart
 print(5 + 2);
@@ -18,7 +18,7 @@ Output:
 2.5
 ```
 
-We also have augmented operators that works in this way:
+We also have augmented operators that work as follows:
 
 ```dart
 void main() {
@@ -28,7 +28,7 @@ print(x);
 }
 ```
 
-To make it shorter we use augmented operators:
+To make it shorter, we use augmented operators:
 
 ```dart
 void main() {
@@ -38,9 +38,9 @@ print(x);
 }
 ```
 
-And this will work with `+`,`-`,`*`,`/`.
+This will work with `+`,`-`,`*`,`/`.
 
-It's worth to notice that dart unlike us, is good at math, and it will follow the rules of math, for example:
+It's worth noting that Dart, unlike us, is good at math, and it will follow the rules of math, for example:
 
 ```dart
 print(6-3*2);
@@ -52,7 +52,7 @@ Output:
 0
 ```
 
-Dart will do the multiplication first, then evaluate the remaining. If we want dart to do the subtraction first we use parenthesis:
+Dart will do the multiplication first, then evaluate the remaining. If we want Dart to do the subtraction first, we use parenthesis:
 
 ```dart
 print((6-3)*2);
@@ -91,7 +91,7 @@ print(x<=y); // false
 }
 ```
 
-But some times, you need to compare multiple expressions in one go, and for that you use `&&` and `||` logical operators:
+But sometimes, you need to compare multiple expressions in one go, and for that, you can use `&&` and `||` logical operators:
 
 ```dart
 void main(){
@@ -103,7 +103,7 @@ print(x > y || x < 4 ); // true
 }
 ```
 
-For the `&&` aka `And` operator, both conditions should evaluate to true so it can consider it as true:
+For the `&&` aka `And` operator, both conditions should evaluate to true so Dart can consider it as true:
 
 ```dart
 print(x > y && x < 10 ); // true
@@ -127,7 +127,7 @@ Will be evaluated to:
 print(true && false ); // false
 ```
 
-For the `||` aka `OR` operator only one of the conditions should evaluate to true to be considered as true by dart:
+For the `||` aka `OR` operator, only one of the conditions should evaluate to true to be considered as true by Dart:
 
 ```dart
 print(x > y || x < 4 ); // true

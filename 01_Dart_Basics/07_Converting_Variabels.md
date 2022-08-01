@@ -1,6 +1,6 @@
-In this lesson we will learn how to convert variables types.
+In this lesson, we will learn how to convert variable types.
 
-Let's start with this main method:
+Let's start with the main method:
 
 ```dart
 void main() {
@@ -8,7 +8,7 @@ int attendance = 200;
 }
 ```
 
-You have learned a lot of string methods, let's try to apply the `replaceAll` method to replace all zeros to ones:
+You have learned a lot of string methods, let's apply the `.replaceAll` method to replace all zeros to ones:
 
 ```dart
 void main() {
@@ -17,7 +17,7 @@ print(attendance.replaceAll('0','1'));
 }
 ```
 
-Oops, dart is complaining, we can't apply a string method to an integer 😥, let's convert this variable to a string:
+Oops, Dart is complaining. We can't apply a string method to an integer type 😥. Let's convert this variable to a string:
 
 ```dart
 void main() {
@@ -27,9 +27,9 @@ print(attendance.replaceAll('0','1'));
 }
 ```
 
-The `.toString()` method turns an integer to a string, but we can't assign the result to the variable `attendance`, why 🤔?
+The `.toString()` method turns an integer into a string, but we can't assign the result to the variable `attendance` again, why 🤔?
 
-Because we converted `200` to a `string` we can't assign it to a variable with the type `int`, so we have to create a new variable of type `string` and assign it to it:
+Because we converted `200` to a `string`, and we can't assign it to a variable with the type `int`, so we have to create a new variable of type `string` and assign `attendance.toString()` to it:
 
 ```dart
 void main() {
@@ -39,7 +39,7 @@ print(attendance.replaceAll('0','1'));
 }
 ```
 
-Then, apply the `.replaceAll()` method on the new variable we just created:
+Then, apply the `.replaceAll()` method to the new variable we just created:
 
 ```dart
 void main() {
@@ -55,7 +55,7 @@ Output:
 211
 ```
 
-We can do this in a shorter way, which is called chaining 🔗 methods, calling a method after a method after a method etc:
+We can do this in a shorter way, which is called chaining 🔗 methods. It is a mechanism of calling a method on another method in a single line instead of calling other methods with the same object reference separately:
 
 ```dart
 void main() {
@@ -64,7 +64,7 @@ print(attendance.toString().replaceAll('0','1'));
 }
 ```
 
-There's also a `toInt` and `toDouble` methods that works the same way, for example:
+There are also `toInt` and `toDouble` methods that work the same way, for example:
 
 ```dart
 void main() {
@@ -79,19 +79,19 @@ Output:
 1
 ```
 
-But for strings, not all strings can be converted to a double or an integer, for example you can't:
+Not all strings can be converted to a double or an integer. For example, you can't covert the following string to a double:
 
 ```dart
 "hello".toDouble();
 ```
 
-For dart to be able to check a string if it can be converted or not, we use `parsing` in a such way:
+For Dart, to be able to check if a string can be converted or not, we use `parsing` as follows:
 
 ```dart
 double.parse("hello");
 ```
 
-If it can be converted to a double dart will do that for us, and if it's not, like the case above the output will be nothing.
+If it can be converted into a double, Dart will do that for us. If it can't, like the case above, the output will be nothing.
 
 ```dart
 double.parse("hello"); // outputs nothing
