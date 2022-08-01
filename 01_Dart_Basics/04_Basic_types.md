@@ -1,4 +1,4 @@
-In the previous lesson we declared a variable with the `String` type, I bet you are wondering what other types we have in Dart.
+In the previous lesson, we declared a variable with the `String` type, I bet you are wondering what other types do we have in Dart.
 
 The main basic types that you need to know are:
 
@@ -7,7 +7,7 @@ The main basic types that you need to know are:
 3. boolean
 4. String
 
-Let's see how to use them:
+Let's see how they're used:
 
 ```dart
 void main() {
@@ -20,9 +20,9 @@ void main() {
 
 Let's start with them one by one:
 
-1. `int age = 24;` an `int` type is used for any number that doesn't have decimal places.
-2. `double height = 1.78;` the `double` aka `float` is used for any number that has a fractional part.
-3. `bool lovesCoding = true;` the `bool` aka `boolean` can be assigned two possible values, true and false.
+1. `int age = 24;`: an `int` type is used for any number that doesn't have decimal places.
+2. `double height = 1.78;`: the `double` aka `float` is used for any number that has a fractional part.
+3. `bool lovesCoding = true;`: the `bool` aka `boolean` can be assigned two possible values, true and false.
 
 ### Challenge 👾: Can you spot the variable with the correct type?
 
@@ -32,7 +32,7 @@ bool onSale = 'true';
 double temp = 54.2;
 ```
 
-### Solution 💡: 
+### Solution 💡:
 
 ```
 int price = '200'; ❌

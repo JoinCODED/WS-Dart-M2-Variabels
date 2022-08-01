@@ -1,4 +1,4 @@
-In the previous lesson we declared a lot of variables, let's print them out:
+In the previous lesson, we declared a lot of variables, let's print them out:
 
 ```dart
 void main() {
@@ -21,7 +21,7 @@ We want to achieve this output:
 My name is Salem, I'm 24 years old, I'm 1.78 meters tall, and do I love coding? thats true!
 ```
 
-Lets remove all our print statements and replace them with only one:
+Let's replace all of our `print` statements with one only:
 
 ```dart
 void main() {
@@ -33,7 +33,7 @@ void main() {
 }
 ```
 
-Now we need to inject 💉 our variable in here, lets try this:
+Now, we need to inject our variable in here, let's try the following:
 
 ```dart
 void main() {
@@ -45,7 +45,7 @@ void main() {
 }
 ```
 
-So.. did it work 😶‍🌫️? nope, dart thinks `name` is a string, how can we tell it that's a variable?
+So... Did it work? nope, Dart thinks `name` is a string. How can we tell it that's it's a variable?
 
 There are two ways:
 
@@ -65,7 +65,7 @@ void main() {
 
 ### String interpolation:
 
-This one is much nicer, let's see how this works:
+This one is much nicer, let's see how it works:
 
 ```dart
 void main() {
@@ -77,9 +77,9 @@ void main() {
 }
 ```
 
-We just have to add a `$` sign before the variable and dart will know that this is a variable!
+We have to add a `$` sign before the variable and Dart will know that this is a variable.
 
-And we can do the same for the rest of our sentence:
+We can do the same for the rest of our variables:
 
 ```dart
 void main() {
@@ -91,16 +91,16 @@ void main() {
 }
 ```
 
-But what if i want to print my age + 1, as an arithmetic (we will talk about it later).
+But what if I want to print my age + 1 as an arithmetic? (we will talk about it later).
 
 ```dart
 print("My $age + 1");
 ```
 
-hmm, dart thinks that `+ 1` is a string, to solve this we can:
+Hmm, Dart thinks that `+ 1` is a string. To fix the issue, we can use curly braces:
 
 ```dart
 print("My ${age + 1});
 ```
 
-by surrounding `age + 1` in curly braces we are telling dart that this is an expression that needs to be computed, not a string.
+By surrounding `age + 1` in curly braces, we are telling Dart that this is an expression that needs to be computed, this is not a string.
